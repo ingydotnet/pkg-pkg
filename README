@@ -1,0 +1,35 @@
+Introduction
+============
+
+The `pkg` command line utility is an [Acmeist](http://acmeism.org) effort to
+help create and maintain programming language modules in a simple and
+consistent way. It makes no assumptions for you. You can configure it any way
+you wish.
+
+Installation
+============
+
+You will need to install the `pkg` command line tool. You can get it from CPAN
+with this command:
+
+    cpanm --sudo Package
+
+Then you should fork this git repository on GitHub and configure it using your
+own personal information and code styles.
+
+Usage
+=====
+
+To create a new programming language module package, use a command like this:
+
+    pkg new --from=pkg/perl/dzil --module=Foo::Bar
+
+That will create a new directory called (by default) `./Foo-Bar/`, with all
+your new module bits in it.
+
+Template Repositories
+=====================
+
+* https://github.com/ingydotnet/pkg-pkg
+* https://github.com/rafl/perl-pkg
+* https://github.com/rafl/perl-dzil-pkg
